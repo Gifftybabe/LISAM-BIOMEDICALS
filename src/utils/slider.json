@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Micromanipulators",
+    "price": "47,043",
+    "detail": "Precision tools essential for delicate handling and manipulation in assisted reproductive technology (ART)",
+    "image": "./res1.jpg"
+  },
+  {
+    "name": "QC Devices",
+    "price": "66,353",
+    "detail": "Advanced instruments for rigorous quality control, ensuring precision and reliability in IVF consumables.",
+    "image": "./res2.webp"
+  },
+  {
+    "name": "ThermoGear",
+    "price": "35,853",
+    "detail": "Specialized devices designed to maintain precise and consistent temperature conditions.",
+    "image": "./res3.jpg"
+  },
+  {
+    "name": "Microscopes",
+    "price": "47,043",
+    "detail": "High-performance optical instruments essential for detailed observation and analysis of biological samples",
+    "image": "./res4.jpg"
+  },
+  {
+    "name": "Incubators",
+    "price": "66,353",
+    "detail": "Critical equipment maintaining stable and controlled environments for the cultivation and development of embryos",
+    "image": "./res5.jpg"
+  },
+  {
+    "name": "Filters",
+    "price": "35,853",
+    "detail": "Essential components designed to purify and sterilize air and liquids, maintaining pristine conditions.",
+    "image": "./res6.webp"
+  },
+  {
+    "name": "IVF Micropipettes",
+    "price": "35,853",
+    "detail": "Precision tools designed for accurate handling and transfer of small volumes of fluids critical in IVF procedures.",
+    "image": "./res7.jpg"
+  },
+  {
+    "name": "MediProbes",
+    "price": "35,853",
+    "detail": "pecialized instruments for precise delivery and extraction of fluids in assisted reproductive techniques.",
+    "image": "./res8.jpg"
+  },
+  {
+    "name": "Dishes",
+    "price": "35,853",
+    "detail": "Specialized culture dishes designed for optimal growth and development of embryos and cells.",
+    "image": "./res9.jpg"
+  },
+  {
+    "name": "Art Media",
+    "price": "35,853",
+    "detail": "dvanced solutions formulated to support the growth, manipulation, and preservation of embryos.",
+    "image": "./res10.jpg"
+  }
+]
