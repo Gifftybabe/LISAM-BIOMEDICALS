@@ -20,11 +20,11 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="program container">
+      <div className="program">
         <img src={program_2} alt="" />
         <div className="caption">
           <img src={repair} alt="" />
-          <p>Repair and Maintenance</p>
+          <p>Technical Setup/Maintenance</p>
         </div>
       </div>
 

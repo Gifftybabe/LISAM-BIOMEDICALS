@@ -11,7 +11,7 @@ const About = () => {
         <img src={play_icon} alt="" className="play-icon" />
       </div>
       <div className="about-right">
-        <h3>ABOUT LiSam</h3>
+        <h3>ABOUT LISAM BIOMEDICALS</h3>
         <h2>Leading the Way in IVF Innovation</h2>
         <p>
           At LiSam, we are dedicated to advancing the field of assisted
