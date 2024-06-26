@@ -8,10 +8,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Residencies from "./components/Residencies/Residencies";
 import Services from "./components/Services/Services";
-<<<<<<< HEAD
-=======
 import Testimonials from "./components/Testimonials/Testimonials";
->>>>>>> aa4d58b (Testimonial page done)
 import Title from "./components/Title/Title";
 import Value from "./components/Value/Value";
 
@@ -23,19 +20,7 @@ function App() {
         <Header />
         <Hero />
       </div>
-<<<<<<< HEAD
-      <Title subTitle='Our Servives' title='Comprehensive IVF Solutions'/>
-      <Services />
-      <About />
-      <Title subTitle='Our Products' title='Discover Advanced Tools for Optimal IVF Outcomes'/>
-      <Residencies/>
-      <Companies />
-      
-      <Value/>
-      <Contact/>
-      <GetStarted/>
-      <Footer/>
-=======
+
       <Title subTitle="Our Servives" title="Comprehensive IVF Solutions" />
       <Services />
       <About />
@@ -55,7 +40,6 @@ function App() {
       <Contact />
       <GetStarted />
       <Footer />
->>>>>>> aa4d58b (Testimonial page done)
     </div>
   );
 }
