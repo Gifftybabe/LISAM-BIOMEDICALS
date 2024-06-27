@@ -35,9 +35,14 @@ function App() {
         title="Trusted by Professionals, Loved by Clients"
       />
       <Testimonials />
+      <Title
+        subTitle="Contact Us"
+        title="Get in Touch"
+      />
+       <Contact />
       <Companies />
 
-      <Contact />
+     
       <GetStarted />
       <Footer />
     </div>

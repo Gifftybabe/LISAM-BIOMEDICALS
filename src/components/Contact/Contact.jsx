@@ -1,88 +1,70 @@
 import React from "react";
 import "./Contact.css";
-import { MdCall } from "react-icons/md";
-import { BsFillChatDotsFill } from "react-icons/bs";
-import {HiChatBubbleBottomCenter} from 'react-icons/hi2'
+import msg_icon from "../../assets/msg-icon.png";
+import mail_icon from "../../assets/mail-icon.png";
+import phone_icon from "../../assets/phone-icon.png";
+import location_icon from "../../assets/location-icon.png";
+import white_arrow from '../../assets/white-arrow.png'
+
 const Contact = () => {
+
+
+  const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event) => {
+      event.preventDefault();
+      setResult("Sending....");
+      const formData = new FormData(event.target);
+  
+      formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+  
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+  
+      const data = await response.json();
+  
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
+    };
+    
   return (
-    <div id="contact-us" className="c-wrapper">
-      <div className="paddings innerWidth flexCenter c-container">
-        {/* left side */}
-        <div className="flexColStart c-left">
-          <span className="orangeText">Our Contact Us</span>
-          <span className="primaryText">Easy to contact us</span>
-          <span className="secondaryText">
-            We always ready to help by providijng the best services for you. We
-            beleive a good blace to live can make your life better{" "}
-          </span>
 
-          <div className="flexColStart contactModes">
-            {/* first row */}
-            <div className="flexStart row">
-              <div className="flexColCenter mode">
-                <div className="flexStart">
-                  <div className="flexCenter icon">
-                    <MdCall size={25} />
-                  </div>
-                  <div className="flexColStart detail">
-                    <span className="primaryText">Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
-                  </div>
-                </div>
-                <div className="flexCenter button">Call now</div>
-              </div>
-
-              <div className="flexColCenter mode">
-                <div className="flexStart">
-                  <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
-                  </div>
-                  <div className="flexColStart detail">
-                    <span className="primaryText">Chat</span>
-                    <span className="secondaryText">021 123 145 14</span>
-                  </div>
-                </div>
-                <div className="flexCenter button">Chat now</div>
-              </div>
-            </div>
-
-            {/* second row */}
-            <div className="flexStart row">
-              <div className="flexColCenter mode">
-                <div className="flexStart">
-                  <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
-                  </div>
-                  <div className="flexColStart detail">
-                    <span className="primaryText">Video Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
-                  </div>
-                </div>
-                <div className="flexCenter button">Video Call now</div>
-              </div>
-
-              <div className="flexColCenter mode">
-                <div className="flexStart">
-                  <div className="flexCenter icon">
-                    <HiChatBubbleBottomCenter size={25} />
-                  </div>
-                  <div className="flexColStart detail">
-                    <span className="primaryText">Message</span>
-                    <span className="secondaryText">021 123 145 14</span>
-                  </div>
-                </div>
-                <div className="flexCenter button">Message now</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* right side */}
-        <div className="flexEnd c-right">
-          <div className="image-container">
-            <img src="./contact.jpg" alt="" />
-          </div>
-        </div>
+    <div className="contact">
+      <div className="contact-col">
+        <h3>
+          Send us a message <img src={msg_icon} alt="" />
+        </h3>
+        <p>
+          Please fill out the form below with your inquiries or feedback, and we
+          will respond promptly. At LiSam, your success is our mission, and we
+          are excited to partner{" "}
+        </p>
+        <ul>
+          <li><img src={mail_icon} alt="" />somonoji2020@gmail.com</li>
+          <li><img src={phone_icon} alt="" />+234 818 397 1129</li>
+          <li><img src={location_icon} alt="" />
+            Plot 170 HillSide Extension <br /> Darwaki Abuja Nigeria
+          </li>
+        </ul>
+      </div>
+      <div className="contact-col">
+        <form onSubmit={onSubmit}>
+          <label>Your Name</label>
+          <input type="text" name="name" placeholder="Enter your name" required />
+          <label>Phone Number</label>
+          <input type="tel" name="phone" placeholder="Enter your phone number" required/>
+          <label>Write your message here</label>
+          <textarea name="message" rows="6" placeholder="Enter your message" required></textarea>
+          <button type="submit" className="btn dark-btn">Send <img src={white_arrow} alt="" /></button>
+        </form>
+        <span>{result}</span>
       </div>
     </div>
   );
