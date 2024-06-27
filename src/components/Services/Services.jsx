@@ -11,7 +11,7 @@ import setup from "../../assets/setup.png";
 
 const Services = () => {
   return (
-    <div className="programs">
+    <div id="services" className="programs">
       <div className="program">
         <img src={program_2} alt="" />
         <div className="caption">

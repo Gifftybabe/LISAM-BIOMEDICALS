@@ -7,7 +7,7 @@ import "./Residencies.css";
 import { sliderSettings } from "../../utils/common";
 const Residencies = () => {
   return (
-    <div id="residencies" className="r-wrapper">
+    <div id="products" className="r-wrapper">
       <div className="paddings innerWidth r-container">
         <div className="flexColStart r-head">
           {/* <span className="orangeText">Our Products</span>

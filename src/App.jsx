@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import About from "./components/About/About";
 import Companies from "./components/Companies/Companies";
@@ -11,8 +12,12 @@ import Services from "./components/Services/Services";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Title from "./components/Title/Title";
 import Value from "./components/Value/Value";
+import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 
 function App() {
+
+  const [playState, setPlayState] = useState(false)
+
   return (
     <div className="App">
       <div>
@@ -21,9 +26,9 @@ function App() {
         <Hero />
       </div>
 
-      <Title subTitle="Our Servives" title="Comprehensive IVF Solutions" />
+      <Title subTitle="Our Services" title="Comprehensive IVF Solutions" />
       <Services />
-      <About />
+      <About setPlayState={setPlayState} />
       <Title
         subTitle="Our Products"
         title="Discover Advanced Tools for Optimal IVF Outcomes"
@@ -35,16 +40,13 @@ function App() {
         title="Trusted by Professionals, Loved by Clients"
       />
       <Testimonials />
-      <Title
-        subTitle="Contact Us"
-        title="Get in Touch"
-      />
-       <Contact />
+      <Title subTitle="Contact Us" title="Get in Touch" />
+      <Contact />
       <Companies />
 
-     
-      <GetStarted />
       <Footer />
+
+      <VideoPlayer playState={playState} setPlayState={setPlayState}/>
     </div>
   );
 }
