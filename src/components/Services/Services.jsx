@@ -7,35 +7,36 @@ import program_4 from "../../assets/program_5.jpg";
 import consultation from "../../assets/consultation.png";
 import repair from "../../assets/repair.png";
 import sales from "../../assets/sales.png";
-import setup from "../../assets/setup.png";
 
 const Services = () => {
   return (
-    <div id="services" className="programs">
-      <div className="program">
-        <img src={program_2} alt="" />
-        <div className="caption">
-          <img src={repair} alt="" />
-          <p>Technical Setup/Maintenance</p>
+    <section id="services" className="flexColCenter">
+      <div className="programs innerWidth paddings">
+        <div className="program">
+          <img src={program_2} alt="" />
+          <div className="caption">
+            <img src={repair} alt="" />
+            <p>Technical Setup/Maintenance</p>
+          </div>
         </div>
-      </div>
 
-      <div className="program">
-        <img src={program_4} alt="" />
-        <div className="caption">
-          <img src={sales} alt="" />
-          <p>IVF Supplies Distribution</p>
+        <div className="program">
+          <img src={program_4} alt="" />
+          <div className="caption">
+            <img src={sales} alt="" />
+            <p>IVF Supplies Distribution</p>
+          </div>
         </div>
-      </div>
 
-      <div className="program">
-        <img src={program_3} alt="" />
-        <div className="caption">
-          <img src={consultation} alt="" />
-          <p>Expert Consultation</p>
+        <div className="program">
+          <img src={program_3} alt="" />
+          <div className="caption">
+            <img src={consultation} alt="" />
+            <p>Expert Consultation</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
