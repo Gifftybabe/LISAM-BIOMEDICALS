@@ -29,10 +29,10 @@ function App() {
       <Title subTitle="Our Services" title="Comprehensive IVF Solutions" />
       <Services />
       <About setPlayState={setPlayState} />
-      <Title
+      {/* <Title
         subTitle="Our Products"
         title="Discover Advanced Tools for Optimal IVF Outcomes"
-      />
+      /> */}
       <Residencies />
       <Value />
       <Title

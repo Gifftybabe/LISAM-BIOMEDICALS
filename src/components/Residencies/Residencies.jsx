@@ -10,10 +10,10 @@ const Residencies = () => {
     <div id="products" className="r-wrapper">
       <div className="paddings innerWidth r-container">
         <div className="flexColStart r-head">
-          {/* <span className="orangeText">Our Products</span>
+          <span className="orangeText">Our Products</span>
           <span className="primaryText">
             Discover Advanced Tools for Optimal IVF Outcomes
-          </span> */}
+          </span>
         </div>
         <Swiper {...sliderSettings}>
           <SlideNextButton />

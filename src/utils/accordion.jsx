@@ -3,21 +3,21 @@ import { MdCancel, MdAnalytics } from "react-icons/md";
 const data = [
   {
     icon: <HiShieldCheck/>,
-    heading: "Best interest rates on the market",
+    heading: "Commitment to Quality",
     detail:
-      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+      "At LiSam Biomedicals, we understand the critical nature of IVF procedures. Our commitment to quality ensures that every product we offer meets the highest standards of reliability and safety. ",
   },
   {
     icon: <MdCancel />,
-    heading: "Prevent unstable prices",
+    heading: "Comprehensive Services",
     detail:
-      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+      "Our services go beyond merely supplying consumables. We offer expert consultation, comprehensive laboratory setup, and ongoing maintenance and repair services. Our team of experienced professionals is dedicated to providing you with tailored solutions that fit your unique needs, ensuring your lab operates smoothly and efficiently.",
   },
   {
     icon: <MdAnalytics />,
-    heading: "Best price on the market",
+    heading: "Client-Centered Approach",
     detail:
-      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
+      "We believe in building strong, lasting relationships with our clients. Your success is our success, and we are here to support you every step of the way. Our client-centered approach means we listen to your needs, provide prompt support, and continually strive to exceed your expectations.",
   },
 ];
 export default data;
