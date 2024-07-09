@@ -13,7 +13,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "9a38dc7b-c370-4598-a2f3-abd4ebc3397f");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -44,9 +44,9 @@ const Contact = () => {
             Send us a message <img src={msg_icon} alt="" />
           </h3>
           <p>
-            Please fill out the form below with your inquiries or feedback, and we
-            will respond promptly. At LiSam, your success is our mission, and we
-            are excited to partner.
+            Please fill out the form below with your inquiries or feedback, and
+            we will respond promptly. At LiSam, your success is our mission, and
+            we are excited to partner.
           </p>
           <ul>
             <li>
@@ -64,13 +64,29 @@ const Contact = () => {
               </span>
             </li>
           </ul>
+
+          <div className="icon">
+            <h3>Follow Us</h3>
+
+            <div className="flex_space">
+              <i className="fab fa-facebook-f" style={{ color: "#3b5998" }}></i>
+              <i className="fab fa-twitter" style={{ color: "#1da1f2" }}></i>
+              <i className="fab fa-linkedin" style={{ color: "#0077b5" }}></i>
+              <i className="fab fa-instagram" style={{ color: "#e1306c" }}></i>
+            </div>
+          </div>
         </div>
 
         {/* Contact Form Column */}
         <div className="contact-form-col">
           <form onSubmit={onSubmit}>
             <label>Your Name</label>
-            <input type="text" name="name" placeholder="Enter your name" required />
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
             <label>Phone Number</label>
             <input
               type="tel"
