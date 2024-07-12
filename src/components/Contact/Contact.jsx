@@ -94,6 +94,13 @@ const Contact = () => {
               placeholder="Enter your phone number"
               required
             />
+            <label>Email Address</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your Email"
+              required
+            />
             <label>Write your message here</label>
             <textarea
               name="message"
